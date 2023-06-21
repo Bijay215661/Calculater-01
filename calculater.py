@@ -1,16 +1,19 @@
 again =True
+print("1234")
+print("456")
+print("34")
 # Mathmetical types
-ad =  "1"
-sb = "2"
-mul = "3"
-dev = "4"
+ad =  '1'
+sb = '2'
+mul = '3'
+dev = '4'
 
 #print function
 print(ad, "Addition")
 print(sb, "Subraction")
 print(mul,"Multiplication")
 print(dev, "Division")
-choise = input("Enter your chpoise : ")
+choise = input("Enter your choise : ")
 
 
 # This line of code is for the addition
