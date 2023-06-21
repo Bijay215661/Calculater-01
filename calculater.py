@@ -3,6 +3,7 @@ ad =  "1"
 sb = 2
 
 print(ad, "Addition")
+print(sb, "Subraction")
 choise = input("Enter your chpoise : ")
 
 
