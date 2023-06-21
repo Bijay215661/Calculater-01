@@ -1,21 +1,25 @@
 again =True
+
 # Mathmetical types
-ad =  "1"
-sb = "2"
-mul = "3"
-dev = "4"
+options = {
+    "add":"1", 
+    "sub":"2",
+    "mul":"3",
+    "div":"4"
+}
+
 
 #print function
-print(ad, "Addition")
-print(sb, "Subraction")
-print(mul,"Multiplication")
-print(dev, "Division")
-choise = input("Enter your chpoise : ")
+print(options["add"], "Addition")
+print(options["sub"], "Subraction")
+print(options["mul"],"Multiplication")
+print(options["div"], "Division")
+choise = input("Enter your choise : ")
 
 
 # This line of code is for the addition
 
-if choise == ad:
+if choise == options["add"]:
     print("Addition")
     big_number = int(input("Enter the first number to add: "))
     second_number = int(input("Enter the Second numbe: "))
@@ -23,7 +27,7 @@ if choise == ad:
     total_add = big_number +  second_number
     print("This is the added value: ", total_add)
 # this one is for the subraction
-elif choise == sb:
+elif choise == options["sub"]:
     print("Subraction")
     fst_bg_number = int(input("Enter the first large number: "))
     sc_number = int(input("Enter the second number: "))
@@ -32,7 +36,7 @@ elif choise == sb:
     print("This is the subracted number: ", sub_total)
 
 #This line of code is for multiplay
-elif choise == mul:
+elif choise == options["mul"]:
     print("Multiplication")
     first_multi = int(input("Enter the first number: "))
     second_multi = int(input("Enter the Second numbe: "))
@@ -41,7 +45,7 @@ elif choise == mul:
     print("This is the multiplyed value: ", total_multipal)
 
 #This line of code is for the Division
-elif choise == dev:
+elif choise == options["div"]:
     print("Division")
     first_division = int(input("Enter the first number: "))
     second_division = int(input("Enter the Second numbe: "))
@@ -57,19 +61,21 @@ if continue_again == "n":
 #while of the repearting
 while again == True:
     # Mathmetical types
-    ad =  "1"
-    sb = "2"
-    mul ="3"
-    dev = "4"
+    options={"add": "1",
+            "sub":"2",
+            "mul": "3",
+            "div":"4"
+            
+            }
     #print function
-    print(ad, "Addition")
-    print(sb, "Subraction")
-    print(mul, "Multiplication")
-    print(dev, "Division")
+    print(options["add"], "Addition")
+    print(options["sub"], "Subraction")
+    print(options["mul"], "Multiplication")
+    print(options["div"], "Division")
     choise = input("Enter your chpoise : ")
 
     # This line of code is for the addition
-    if choise == ad:
+    if choise == options["add"]:
         print("Addition")
         big_number = int(input("Enter the first number to add: "))
         second_number = int(input("Enter the Second numbe: "))
@@ -77,7 +83,7 @@ while again == True:
         total_add = big_number +  second_number
         print("This is the added value: ", total_add)
     # this one is for the subraction
-    elif choise == sb:
+    elif choise == options["sub"]:
         print("Subraction")
         fst_bg_number = int(input("Enter the first large number: "))
         sc_number = int(input("Enter the second number: "))
@@ -85,7 +91,7 @@ while again == True:
         sub_total = fst_bg_number - sc_number
         print("This is the subracted number: ", sub_total)
     #This line of code is for multiplay
-    elif choise == mul:
+    elif choise == options["mul"]:
         print("Multiplication")
         first_multi = int(input("Enter the first number: "))
         second_multi = int(input("Enter the Second numbe: "))
@@ -93,7 +99,7 @@ while again == True:
         print("This is the multiplyed value: ", total_multipal)
 
     #This line of code is for the Division
-    elif choise == dev:
+    elif choise == options["div"]:
         print("Division")
         first_division = int(input("Enter the first division number: "))
         second_division = int(input("Enter the divid numbe: "))
